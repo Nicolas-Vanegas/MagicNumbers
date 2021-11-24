@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceneController" styleClass="body">
+   <children>
+      <GridPane layoutX="-1.0" layoutY="66.0" prefHeight="361.0" prefWidth="509.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="number1" mnemonicParsing="false" onAction="#numberClicked" prefHeight="91.0" prefWidth="186.0" styleClass="card-number" text="1" textFill="#6b3e3e" />
+            <Button fx:id="number2" mnemonicParsing="false" onAction="#numberClicked" prefHeight="91.0" prefWidth="192.0" styleClass="card-number" text="2" GridPane.columnIndex="1" />
+            <Button fx:id="number4" mnemonicParsing="false" onAction="#numberClicked" prefHeight="90.0" prefWidth="177.0" styleClass="card-number" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="number5" mnemonicParsing="false" onAction="#numberClicked" prefHeight="90.0" prefWidth="198.0" styleClass="card-number" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="number7" mnemonicParsing="false" onAction="#numberClicked" prefHeight="90.0" prefWidth="194.0" styleClass="card-number" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="number8" mnemonicParsing="false" onAction="#numberClicked" prefHeight="90.0" prefWidth="187.0" styleClass="card-number" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="number10" mnemonicParsing="false" onAction="#numberClicked" prefHeight="90.0" prefWidth="189.0" styleClass="card-number" text="10" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="number3" mnemonicParsing="false" onAction="#numberClicked" prefHeight="91.0" prefWidth="198.0" styleClass="card-number" text="3" GridPane.columnIndex="2" />
+            <Button fx:id="number6" mnemonicParsing="false" onAction="#numberClicked" prefHeight="90.0" prefWidth="192.0" styleClass="card-number" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="number9" mnemonicParsing="false" onAction="#numberClicked" prefHeight="90.0" prefWidth="205.0" styleClass="card-number" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Pane layoutX="1.0" layoutY="-1.0" prefHeight="72.0" prefWidth="508.0" styleClass="header">
+         <children>
+            <Label layoutX="135.0" layoutY="21.0" prefHeight="31.0" prefWidth="285.0" styleClass="text-header" text="The Magic Numbers" textFill="#f2c582">
+               <padding>
+                  <Insets left="20.0" top="1.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1.0" layoutY="426.0" prefHeight="136.0" prefWidth="509.0">
+         <children>
+            <Button layoutX="182.0" layoutY="32.0" mnemonicParsing="false" onAction="#newGame" prefHeight="72.0" prefWidth="146.0" text="New Game" styleClass="new-game"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
