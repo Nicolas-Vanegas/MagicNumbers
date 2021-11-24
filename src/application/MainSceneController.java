@@ -4,13 +4,9 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.stage.Stage;
 
 import java.nio.file.Paths;
 import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -22,7 +18,6 @@ public class MainSceneController {
 	//propiedad para establecer el número que se debe clickear.
 	private int number;
 	
-	private List<Node> cards = new ArrayList<Node>();
 	// Event Listener on Button.onAction
 	@FXML
 	public Boolean numberClicked(ActionEvent event) {
