@@ -75,7 +75,7 @@ public class MainSceneController {
 	}
 	
 	//Evento para comenzar el juego.
-	public Boolean newGame(ActionEvent event) {
+	public void newGame(ActionEvent event) {
 		//Establecer source para poder usar sus métodos.
 		final Node source = (Node) event.getSource();
 		
@@ -87,8 +87,6 @@ public class MainSceneController {
 		this.number = 1;
 		//Audio del número 1.
 		audio(this.number, null);
-		
-		return true;
 	}
 	
 	//Método para establecer la url del audio a reproducir.
